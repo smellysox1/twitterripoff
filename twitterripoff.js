@@ -33,7 +33,7 @@ function AddUser() {
   
       localStorage.setItem("room_name", room_name);
       
-      window.location = "https://5ueofwcfld7zexxzotazog-on.drv.tw/twitterripoffroom.html";
+      window.location = "twitterripoffroom.html";
   }
   
   function getData() {  firebase.database().ref("/").on('value', function(snapshot) { document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key;
@@ -52,7 +52,7 @@ function AddUser() {
   {
     console.log(name);
     localStorage.setItem("room_name", name);
-      window.location = "https://5ueofwcfld7zexxzotazog-on.drv.tw/twitterripoffroom.html";
+      window.location = "twitterripoffroom.html";
   }
   
   firebase.initializeApp(firebaseConfig);
@@ -109,5 +109,5 @@ function updateLike(message_id)
   function logout() {
   localStorage.removeItem("user_name");
   localStorage.removeItem("room_name");
-      window.location = "https://5ueofwcfld7zexxzotazog-on.drv.tw/twitterripoff.html";
+      window.location = "twitterripoff.html";
   }
