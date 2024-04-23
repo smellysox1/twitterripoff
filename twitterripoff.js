@@ -14,7 +14,7 @@ function AddUser() {
   
     localStorage.setItem("user_name", user_name);
     
-      window.location = "https://5ueofwcfld7zexxzotazog-on.drv.tw/twitterripoffroomselect.html";
+      window.location = "twitterripoffroomselect.html";
   }
   
     firebase.initializeApp(firebaseConfig);
